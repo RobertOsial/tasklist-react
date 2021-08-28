@@ -13,6 +13,10 @@
     align-items: center;
 }
 
+.taskList__item--hidden {
+    display: none;
+}
+
 .taskContent--done {
     text-decoration: line-through;
 }
