@@ -1,9 +1,9 @@
 import "./style.css";
 
-const Task = (props) => (
+const Tasks = ({ tasks, hideDoneTasks }) => (
     <ul className="taskList">
-        {props.tasks.map(task => (
-            <li key={task.id} class="taskList__item">
+        {tasks.map(task => (
+            <li key={task.id} className={`taskList__item${task.done && hideDoneTasks ? " taskList__item--hidden" : ""}`}>
                 <button className="taskList__button taskList__button--done">
                     {task.done ? "✓" : ""}
                 </button>
@@ -18,4 +18,4 @@ const Task = (props) => (
     </ul >
 );
 
-export default Task;
+export default Tasks;
