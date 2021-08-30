@@ -6,7 +6,7 @@ import Header from "./Header";
 import Container from "./Container";
 import Buttons from "./Buttons";
 
-const hideDoneTasks = false;
+const hideDone = false;
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -53,7 +53,7 @@ function App() {
         title="Lista zadań"
         body={<Tasks
           tasks={tasks}
-          hideDoneTasks={hideDoneTasks}
+          hideDone={hideDone}
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone}
         />
@@ -61,7 +61,7 @@ function App() {
         extraHeaderContent={
           <Buttons
             tasks={tasks}
-            hideDoneTasks={hideDoneTasks}
+            hideDone={hideDone}
             setAllDone={setAllDone}
           />
         }
