@@ -6,8 +6,6 @@ import Header from "./Header";
 import Container from "./Container";
 import Buttons from "./Buttons";
 
-const hideDone = false;
-
 function App() {
   const [tasks, setTasks] = useState([
     {
@@ -21,6 +19,8 @@ function App() {
       done: false,
     },
   ]);
+
+  const [hideDone, setHideDone] = useState(false);
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id))
@@ -40,6 +40,10 @@ function App() {
       ...task,
       done: true,
     })));
+  };
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone);
   };
 
   return (
@@ -63,6 +67,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             setAllDone={setAllDone}
+            toggleHideDone={toggleHideDone}
           />
         }
       />
