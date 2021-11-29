@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Section from "./Section";
@@ -7,20 +7,19 @@ import Container from "./Container";
 import Buttons from "./Buttons";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      content: "nauczyć się Reacta",
-      done: true,
-    },
-    {
-      id: 2,
-      content: "zrobić kawę",
-      done: false,
-    },
-  ]);
-
   const [hideDone, setHideDone] = useState(false);
+
+  const tasksFromLocalStorage = localStorage.getItem("tasks");
+
+  const [tasks, setTasks] = useState(
+    tasksFromLocalStorage
+      ? JSON.parse(tasksFromLocalStorage)
+      : []
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id))
