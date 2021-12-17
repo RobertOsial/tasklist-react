@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledForm = styled.form`
+export const Form = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
@@ -19,10 +19,10 @@ export const Button = styled.button`
     color: ${({ theme }) => theme.color.white};
     border: none;
     padding: 10px;
-    cursor: pointer;
 
     &:hover {
         filter: brightness(110%);
+        cursor: pointer;
     }
 F
     &:active {
