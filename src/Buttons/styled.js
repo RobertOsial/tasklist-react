@@ -10,7 +10,6 @@ export const Button = styled.button`
     background-color: transparent;
     color: ${({ theme }) => theme.color.teal};
     margin: 0 0 0 20px;
-    cursor: pointer;
     transition: filter 0.3s;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
@@ -20,6 +19,7 @@ export const Button = styled.button`
 
     &:hover {
         filter: brightness(110%);
+        cursor: pointer;
     }
 
     &:active {
