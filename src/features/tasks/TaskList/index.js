@@ -1,6 +1,6 @@
 import { Wrapper, Task, Content, Button } from "./styled";
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const TaskList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     <Wrapper>
         {tasks.map(task => (
             <Task
@@ -25,4 +25,4 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     </Wrapper>
 );
 
-export default Tasks;
+export default TaskList;
