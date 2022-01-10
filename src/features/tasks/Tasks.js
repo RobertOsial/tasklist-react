@@ -10,12 +10,13 @@ import Buttons from "./Buttons";
 const Tasks = () => {
   const [hideDone, setHideDone] = useState(false);
 
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
 
   const {
-    tasks,
+    // tasks,
     addNewTask,
     setAllDone,
     toggleTaskDone,
@@ -32,7 +33,6 @@ const Tasks = () => {
       <Section
         title="Lista zadań"
         body={<TaskList
-          tasks={tasks}
           hideDone={hideDone}
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone}
@@ -40,7 +40,6 @@ const Tasks = () => {
         }
         extraHeaderContent={
           <Buttons
-            tasks={tasks}
             hideDone={hideDone}
             setAllDone={setAllDone}
             toggleHideDone={toggleHideDone}
