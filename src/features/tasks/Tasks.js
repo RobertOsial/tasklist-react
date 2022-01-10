@@ -17,7 +17,7 @@ const Tasks = () => {
 
   const {
     // tasks,
-    addNewTask,
+    // addNewTask,
     setAllDone,
     toggleTaskDone,
     removeTask,
@@ -28,7 +28,7 @@ const Tasks = () => {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
+        body={<Form />}
       />
       <Section
         title="Lista zadań"
