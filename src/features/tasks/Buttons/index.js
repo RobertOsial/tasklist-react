@@ -5,8 +5,6 @@ import { Wrapper, Button } from "./styled";
 const Buttons = ({ hideDone, setAllDone, toggleHideDone }) => {
   const { tasks } = useSelector(selectTasks);
 
-  console.log(tasks);
-
   return (
     <Wrapper>
       {tasks.length > 0 && (
