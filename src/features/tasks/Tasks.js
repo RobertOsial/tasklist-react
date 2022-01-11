@@ -12,7 +12,7 @@ const Tasks = () => {
     // tasks,
     // addNewTask,
     setAllDone,
-    toggleTaskDone,
+    // toggleTaskDone,
     // removeTask,
   } = useTasks();
 
@@ -25,9 +25,7 @@ const Tasks = () => {
       />
       <Section
         title="Lista zadań"
-        body={<TaskList
-          toggleTaskDone={toggleTaskDone}
-        />
+        body={<TaskList />
         }
         extraHeaderContent={
           <Buttons setAllDone={setAllDone} />
