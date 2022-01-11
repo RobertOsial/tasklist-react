@@ -8,14 +8,6 @@ import Buttons from "./Buttons";
 
 const Tasks = () => {
 
-  const {
-    // tasks,
-    // addNewTask,
-    setAllDone,
-    // toggleTaskDone,
-    // removeTask,
-  } = useTasks();
-
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -25,11 +17,8 @@ const Tasks = () => {
       />
       <Section
         title="Lista zadań"
-        body={<TaskList />
-        }
-        extraHeaderContent={
-          <Buttons setAllDone={setAllDone} />
-        }
+        body={<TaskList />}
+        extraHeaderContent={<Buttons />}
       />
     </Container>
   );
