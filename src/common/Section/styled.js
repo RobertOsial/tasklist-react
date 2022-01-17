@@ -34,7 +34,7 @@ export const Button = styled.button`
     border: none;
     background-color: transparent;
     color: ${({ theme }) => theme.color.teal};
-    margin: 0 20px 0 0 ;
+    margin: 0;
     padding: 0;
     transition: filter 0.3s;
 

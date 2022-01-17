@@ -4,6 +4,7 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
 import Buttons from "./Buttons";
+import { Button } from "../../common/Section/styled";
 
 const Tasks = () => {
 
@@ -13,6 +14,10 @@ const Tasks = () => {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
+        extraHeaderContent={
+          <Button>
+            Pobierz zadania
+          </Button>}
       />
       <Section
         title="Lista zadań"
