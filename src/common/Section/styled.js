@@ -55,5 +55,6 @@ export const Button = styled.button`
     &:disabled {
         color: ${({ theme }) => theme.color.silver};
         filter: brightness(100%);
+        cursor: default;
     }
 `;
