@@ -6,9 +6,11 @@ import Container from "../../common/Container";
 import Buttons from "./Buttons";
 import { Button } from "../../common/Section/styled";
 import { useDispatch } from "react-redux";
-import { fetchExampleTasks } from "./tasksSlice"
+import { fetchExampleTasks, selectExampleTasksLoading } from "./tasksSlice"
+import { useSelector } from "react-redux";
 
 const Tasks = () => {
+  const areExampleTasksLoading = useSelector(selectExampleTasksLoading);
   const dispatch = useDispatch();
 
   return (
@@ -18,8 +20,10 @@ const Tasks = () => {
         title="Dodaj nowe zadanie"
         body={<Form />}
         extraHeaderContent={
-          <Button onClick={() => dispatch(fetchExampleTasks())}>
-            Pobierz zadania
+          <Button
+            onClick={() => dispatch(fetchExampleTasks())}
+            disabled={areExampleTasksLoading}>
+            {areExampleTasksLoading ? "Ładowanie..." : "Pobierz zadania"}
           </Button>}
       />
       <Section
