@@ -13,6 +13,7 @@ export const Task = styled.li`
     border-bottom: 1px solid #ddd;
     padding: 10px;
     align-items: center;
+    word-break: break-word;
 
     ${({ hidden }) => hidden && css`
     display: none;
