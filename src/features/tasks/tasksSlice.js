@@ -41,8 +41,12 @@ const tasksSlice = createSlice({
     },
 });
 
+export const selectTasksState = state => state.tasks;
+
+export const selectTasks = state => selectTasksState(state).tasks
+export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectExampleTasksLoading = state => state.tasks.areExampleTasksLoading;
-export const selectTasks = state => state.tasks;
+
 export const {
     addTask,
     deleteTask,
