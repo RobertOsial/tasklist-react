@@ -5,9 +5,10 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media(max-width:${({ theme }) => theme.breakpoint.maxMobile}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileSmall}px) {
         grid-template-columns: 1fr;
-    };
+        grid-gap: 0px;
+    }
 `
 export const Input = styled.input`
     padding: 10px;
