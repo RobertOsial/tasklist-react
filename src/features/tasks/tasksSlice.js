@@ -41,11 +41,14 @@ const tasksSlice = createSlice({
     },
 });
 
-export const selectTasksState = state => state.tasks;
+const selectTasksState = state => state.tasks;
 
 export const selectTasks = state => selectTasksState(state).tasks
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectExampleTasksLoading = state => state.tasks.areExampleTasksLoading;
+
+export const getTaskById = (state, taskId) => 
+    selectTasks(state).find(({ id }) => id === taskId);
 
 export const {
     addTask,
