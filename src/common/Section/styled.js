@@ -14,11 +14,6 @@ export const Header = styled.header`
     grid-template-columns: auto auto;
     justify-content: space-between;
     grid-gap: 20px;
-
-    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
-        margin: 10px;
-    }
 `;
 
 export const Title = styled.h2`
@@ -37,12 +32,7 @@ export const Button = styled.button`
     margin: 0;
     padding: 0;
     transition: filter 0.3s;
-
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
-        flex-basis: 100%;
-        margin: 10px;
-    }
-
+    
     &:hover {
         filter: brightness(110%);
         cursor: pointer;
