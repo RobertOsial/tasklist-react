@@ -2,7 +2,7 @@ import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import Navigation from "./common/Navigation/index.js";
 import AuthorPage from "./features/author/AuthorPage.js";
 import TasksPage from "./features/tasks/TasksPage/index.js";
-import TaskPage from "./features/tasks/TasksPage/TaskPage/index.js";
+import TaskPage from "./features/tasks/TaskPage/index.js";
 
 
 const App = () =>
