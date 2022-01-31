@@ -8,6 +8,7 @@ import { Button } from "../../../common/Section/styled";
 import { useDispatch } from "react-redux";
 import { fetchExampleTasks, selectExampleTasksLoading } from "../tasksSlice"
 import { useSelector } from "react-redux";
+import Search from "./Search";
 
 const Tasks = () => {
   const areExampleTasksLoading = useSelector(selectExampleTasksLoading);
@@ -26,6 +27,10 @@ const Tasks = () => {
             {areExampleTasksLoading ? "Ładowanie..." : "Pobierz zadania"}
           </Button>}
       />
+      <Section
+        body={<Search />}
+      >
+      </Section>
       <Section
         title="Lista zadań"
         body={<TaskList />}
