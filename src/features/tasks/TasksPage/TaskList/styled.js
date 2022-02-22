@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Wrapper = styled.ul`
     list-style: none;
@@ -24,6 +25,16 @@ export const Content = styled.span`
     ${({ done }) => done && css`
         text-decoration: line-through;
     `}  
+`;
+
+export const ContentLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.color.black};
+
+    &:hover {
+        filter: brightness(60%);
+        color: ${({ theme }) => theme.color.teal}
+    }
 `;
 
 export const Button = styled.button`
