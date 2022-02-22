@@ -1,10 +1,13 @@
 import Input from "../../Input";
+import { Wrapper } from "./styled";
 
 const Search = () => {
   return (
-    <Input 
-    placeholder="Filtruj zadania"
-    />
+    <Wrapper>
+      <Input
+        placeholder="Filtruj zadania"
+      />
+    </Wrapper>
   );
 }
 
