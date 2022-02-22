@@ -28,6 +28,7 @@ const Tasks = () => {
           </Button>}
       />
       <Section
+        title="Wyszukiwarka"
         body={<Search />}
       >
       </Section>
