@@ -1,14 +1,14 @@
-import { Wrapper, Navbar, NavItem, StyledNavLink } from "./styled";
+import { Wrapper, Navbar, NavItem, NavLink } from "./styled";
 
 const Navigation = () => {
   return (
     <Wrapper>
       <Navbar>
         <NavItem>
-          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+          <NavLink to="/zadania">Zadania</NavLink>
         </NavItem>
         <NavItem>
-          <StyledNavLink to="/autor">o autorze</StyledNavLink>
+          <NavLink to="/autor">o autorze</NavLink>
         </NavItem>
       </Navbar>
     </Wrapper>
