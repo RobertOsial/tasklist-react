@@ -17,7 +17,7 @@ export const NavItem = styled.li`
 margin-right: 20px;
 `;
 
-export const StyledNavLink = styled(Link)`
+export const NavLink = styled(Link)`
 color: white;
 text-decoration: none;
 
