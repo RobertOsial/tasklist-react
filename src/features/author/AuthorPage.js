@@ -8,7 +8,7 @@ const AuthorPage = () => {
       <Header title="O autorze" />
       <Section
         title="Robert Osial"
-        body={<>tescik</>}
+        body={<>Lubię się uczyć nowych rzeczy. Hobbistycznie programuję w React.</>}
       />
     </Container>
   );
