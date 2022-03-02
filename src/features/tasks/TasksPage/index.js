@@ -6,12 +6,12 @@ import Container from "../../../common/Container";
 import Buttons from "./Buttons";
 import { Button } from "../../../common/Section/styled";
 import { useDispatch } from "react-redux";
-import { fetchExampleTasks, selectExampleTasksLoading } from "../tasksSlice"
+import { fetchExampleTasks, selectLoading } from "../tasksSlice"
 import { useSelector } from "react-redux";
 import Search from "./Search";
 
 const Tasks = () => {
-  const areExampleTasksLoading = useSelector(selectExampleTasksLoading);
+  const loading = useSelector(selectLoading);
   const dispatch = useDispatch();
 
   return (
@@ -23,8 +23,8 @@ const Tasks = () => {
         extraHeaderContent={
           <Button
             onClick={() => dispatch(fetchExampleTasks())}
-            disabled={areExampleTasksLoading}>
-            {areExampleTasksLoading ? "Ładowanie..." : "Pobierz zadania"}
+            disabled={loading}>
+            {loading ? "Ładowanie..." : "Pobierz zadania"}
           </Button>}
       />
       <Section

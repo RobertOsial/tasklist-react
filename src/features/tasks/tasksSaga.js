@@ -2,9 +2,9 @@ import { call, all, delay, put, select, takeEvery, takeLatest } from "redux-saga
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 import {
-    setTasks,
     fetchExampleTasks,
-    setAreExampleTasksLoading,
+    fetchExampleTasksSuccess,
+    fetchExampleTasksError,
     selectTasks
 } from "./tasksSlice";
 
@@ -16,13 +16,11 @@ export function* rootSaga() {
 
 function* fetchExampleTasksHandler() {
     try {
-        yield put(setAreExampleTasksLoading(true));
         yield delay(1000);
         const exampleTasks = yield call(getExampleTasks);
-        yield put(setTasks(exampleTasks));
-        yield put(setAreExampleTasksLoading(false));
+        yield put(fetchExampleTasksSuccess(exampleTasks));
     } catch (error) {
-        yield put(setAreExampleTasksLoading(false));
+        yield put(fetchExampleTasksError());
         yield call(alert, "cos poszło nie tak:(");
     }
 }
