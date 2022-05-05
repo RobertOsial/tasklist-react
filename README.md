@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo
 
-You can find a demo [here](https://robertosial.github.io/tasklist-react/).
+You can find the demo [here](https://robertosial.github.io/tasklist-react/).
 
 ## Available Scripts
 
