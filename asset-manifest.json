@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/tasklist-react/static/js/main.e4a1d960.chunk.js",
-    "main.js.map": "/tasklist-react/static/js/main.e4a1d960.chunk.js.map",
+    "main.js": "/tasklist-react/static/js/main.d8a55c4f.chunk.js",
+    "main.js.map": "/tasklist-react/static/js/main.d8a55c4f.chunk.js.map",
     "runtime-main.js": "/tasklist-react/static/js/runtime-main.4ac42766.js",
     "runtime-main.js.map": "/tasklist-react/static/js/runtime-main.4ac42766.js.map",
-    "static/js/2.329f35e7.chunk.js": "/tasklist-react/static/js/2.329f35e7.chunk.js",
-    "static/js/2.329f35e7.chunk.js.map": "/tasklist-react/static/js/2.329f35e7.chunk.js.map",
+    "static/js/2.1f9a84dc.chunk.js": "/tasklist-react/static/js/2.1f9a84dc.chunk.js",
+    "static/js/2.1f9a84dc.chunk.js.map": "/tasklist-react/static/js/2.1f9a84dc.chunk.js.map",
     "static/js/3.47022387.chunk.js": "/tasklist-react/static/js/3.47022387.chunk.js",
     "static/js/3.47022387.chunk.js.map": "/tasklist-react/static/js/3.47022387.chunk.js.map",
     "index.html": "/tasklist-react/index.html",
-    "static/js/2.329f35e7.chunk.js.LICENSE.txt": "/tasklist-react/static/js/2.329f35e7.chunk.js.LICENSE.txt"
+    "static/js/2.1f9a84dc.chunk.js.LICENSE.txt": "/tasklist-react/static/js/2.1f9a84dc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4ac42766.js",
-    "static/js/2.329f35e7.chunk.js",
-    "static/js/main.e4a1d960.chunk.js"
+    "static/js/2.1f9a84dc.chunk.js",
+    "static/js/main.d8a55c4f.chunk.js"
   ]
 }
